@@ -3,22 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Contact Us Form</title>
+        <link rel="stylesheet" type="text/css" href="CSS/contactus.css">
     </head>
     <body>
-        <h1> Contact Us</h1>
-          <p style="color: blue;">
-            Fill up the form below to send us a message.
-          </p>
-     <form action="https://api.web3forms.com/submit" method="POST" >
-     <input type="hidden" name="access_key" value="88a5c971-23f2-4157-9c7b-b0174d008187">
-     <label>Name:</label>
-     <imput>
-     <label>Email:</label>
-     <imput>
-     
-     <input type="hidden" name="redirect" value="https://web3forms.com/success">
-     <button type="submit"> Submit Form</button>
-     </form>
+        <div class="content-container">
+            <h1>Contact Us</h1>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="88a5c971-23f2-4157-9c7b-b0174d008187">
+            <div>
+             <label for="name">Name:</label>
+             <input type="texte" name="name" id="name" placeholder="Your name" required>
+            </div>
+            <div>
+             <label>Email:</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+            <div>
+            <label for="message">Message:</label> 
+            <textarea id="message" name="message" placeholder="Your message" rows="4"></textarea>
+            </div>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
     </body>
-     </html>
+</html>
