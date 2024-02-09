@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
 body{
-    background color: #efeee7
+    background-color: #efeee7;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font color: #33333;
+    font color: #333333;
     margin: 0;
     padding:0;
 }
@@ -12,7 +10,7 @@ header{
     text-align: center;
 }
 h1{
-    color: #eee;
+    color: azure;
     font-size: 28px;
     margin: auto;
     padding: auto;
